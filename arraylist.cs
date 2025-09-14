@@ -43,5 +43,21 @@ class Arraylist
 
         numbers.Clear();
         Console.WriteLine("Count: " + numbers.Count);
+
+
+    public void facebookLikeCounter()
+    {
+        Console.WriteLine("Please enter different names: ");
+        var input = Console.ReadLine();
+        
+        List<string> nombres = new List<string>();
+
+        while (input != "")
+        {
+
+            nombres.Add(input);
+
+        }    
     }
+
 }
