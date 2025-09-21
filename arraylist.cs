@@ -8,6 +8,7 @@ namespace dotnetpractice;
 
 class Arraylist
 {
+    /*
     static void Arraypractice()
     {
         var numbers = new int[] { 3, 7, 11, 21, 5, 12 };
@@ -44,12 +45,12 @@ class Arraylist
         numbers.Clear();
         Console.WriteLine("Count: " + numbers.Count);
 
-
+        
     public void facebookLikeCounter()
     {
         Console.WriteLine("Please enter different names: ");
         var input = Console.ReadLine();
-        
+
         List<string> nombres = new List<string>();
 
         while (input != "")
@@ -57,7 +58,40 @@ class Arraylist
 
             nombres.Add(input);
 
-        }    
-    }
+        }
+    } 
 
+                Console.Write("Please enter different names: ");
+            String? input = Console.ReadLine();
+
+            List<string> nombres = new List<string>();
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                var part = input.Split(',');
+
+                foreach (var nombreIndividual in part)
+                {
+                    nombres.Add(nombreIndividual.Trim().ToUpper());
+                }
+            }
+            else
+            {
+                Console.WriteLine("");
+            }
+
+            int cantidad = nombres.Count;
+            switch (cantidad)
+            {
+                case 1:
+                    Console.WriteLine($"{nombres[0]} liked your post.");
+                    break;
+                case 2:
+                    Console.WriteLine($"{nombres[0]} and {nombres[1]} liked your post.");
+                    break;
+                default:
+                    Console.WriteLine($"{nombres[0]}, {nombres[1]} and {nombres.Count - 2} others like your post.");
+                    break;
+            }
+        */
 }

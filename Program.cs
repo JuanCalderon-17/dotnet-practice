@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace dotnetPractice
 {
@@ -86,7 +87,7 @@ namespace dotnetPractice
             // (To make sure the program is behaving correctly, you can display the secret number on the console first.)
 
 
-         -------4 EXERCISE
+            -------4 EXERCISE
             Random random = new Random();
             var randomNumber = random.Next(1, 10);
             int number = 0;
@@ -111,7 +112,7 @@ namespace dotnetPractice
                 }
             }
             
-         -------4 EXERCISE
+            -------4 EXERCISE
 
             //Write a program and ask the user to enter a series of numbers separated by comma.
             //Find the maximum of the numbers and display it on the console. For example, if the user enters “5, 3, 8, 1, 4", the program should display 8.
@@ -132,13 +133,8 @@ namespace dotnetPractice
             }
 
             var maxNumber = numbers.Max();
-            Console.Write($"The Maximun number is {maxNumber}");
+            Console.Write($"The Maximun number is {maxNumber}");  */
 
-            */
-
-
-            
-    
         }
     }
 }

@@ -19,7 +19,7 @@ class Calculator
         return a * b;
     }
 
-    public var divisione(int a, int b)
+    public int divisione(int a, int b)
     {
         return a / b;
     }
