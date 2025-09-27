@@ -93,5 +93,27 @@ class Arraylist
                     Console.WriteLine($"{nombres[0]}, {nombres[1]} and {nombres.Count - 2} others like your post.");
                     break;
             }
-        */
+        
+
+    //2- Write a program and ask the user to enter their name.
+    //  Use an array to reverse the name and then store the result in a new string. Display the reversed name on the console.
+
+    public void reverseName()
+    {
+        Console.Write("Please enter your name;");
+        String? input = Console.ReadLine();
+
+        if (string.IsNullOrEmpty(input))
+        {
+            Console.WriteLine("Invalid name.");
+            return;
+        }
+
+        Char[] charArray = input.ToArray();
+        Array.Reverse(charArray);
+
+        Console.WriteLine(new String(charArray));     
+          
+    }
+    */
 }

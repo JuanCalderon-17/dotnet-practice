@@ -2,6 +2,10 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Security;
+using System.IO.Pipes;
+using System.Collections;
+using Arraylist = dotnetpractice.Arraylist;
 
 namespace dotnetPractice
 {
@@ -133,8 +137,12 @@ namespace dotnetPractice
             }
 
             var maxNumber = numbers.Max();
-            Console.Write($"The Maximun number is {maxNumber}");  */
+            Console.Write($"The Maximun number is {maxNumber}");  
 
+            Arraylist person = new Arraylist();
+            person.reverseName();
+            */
         }
+
     }
 }
