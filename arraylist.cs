@@ -115,5 +115,37 @@ class Arraylist
         Console.WriteLine(new String(charArray));     
           
     }
+
+
+    //3- Write a program and ask the user to enter 5 numbers.
+
+    public void uniqueNumbers()
+    {
+        List<int> numberList = new List<int>();
+
+        while (numberList.Count < 5)
+        {
+            Console.Write("Enter a number: ");
+            string? input = Console.ReadLine();
+
+            if (int.TryParse(input, out int number))
+            {
+                if (!numberList.Contains(number))
+                {
+                    numberList.Add(number);
+                }
+                else
+                {
+                    Console.WriteLine("Number already entered before, please add a different number.");
+                }
+            }
+        }
+
+        Console.Write("These are the unique numbers you entered: ");
+        foreach (var number in numberList)
+        {
+            Console.Write(number + " ");
+        }
+    }
     */
 }

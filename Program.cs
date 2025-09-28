@@ -138,11 +138,18 @@ namespace dotnetPractice
 
             var maxNumber = numbers.Max();
             Console.Write($"The Maximun number is {maxNumber}");  
-
+.
+3
             Arraylist person = new Arraylist();
             person.reverseName();
-            */
-        }
+            
 
+            Arraylist identityNumbers = new Arraylist();
+            identityNumbers.uniqueNumbers();
+
+            Arraylist names = new Arraylist();*/
+
+            
+        }
     }
 }
