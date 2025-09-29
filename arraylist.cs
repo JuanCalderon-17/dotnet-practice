@@ -147,5 +147,32 @@ class Arraylist
             Console.Write(number + " ");
         }
     }
-    */
+
+    public void quitOrContinue()
+    {
+        List<int> numberList = new List<int>();
+
+        var stopVar = true;
+        while (stopVar)
+        {
+            Console.Write("Enter a number or type \"Quit\" to exit: ");
+            string? input = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(input))
+            { 
+                Console.WriteLine("Invalid input, please try again.");
+                continue;
+            } 
+            else if (input.Equals("quit", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.Write("Thank you for playing.");
+                stopVar = false;
+            }
+            else if (int.TryParse(input, out int number))
+            {
+                numberList.Add(number);
+            }
+        }
+    }
+     */
 }
