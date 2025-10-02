@@ -175,4 +175,37 @@ class Arraylist
         }
     }
      */
+
+    public void ThreeSmmallestNumbers()
+    {
+        List<int> numberList = new List<int>();
+
+        while (numberList.Count < 5)
+        {
+            Console.Write("Enter numbers separated by commas: ");
+            string? input = Console.ReadLine();
+            if (string.IsNullOrEmpty(input))
+            {
+                Console.WriteLine("Invalid input, please try again.");
+                continue;
+            }
+
+            var parts = input.Split(',');
+            foreach (var part in parts)
+            {
+                if (int.TryParse(part.Trim(), out int number))
+                {
+                    numberList.Add(number);
+                }
+            }
+            numberList.Sort();
+            var ThreeSmmallestNumbers = numberList.Take(3).ToList();
+            Console.Write("the Three Smallest Numbers are: ");
+            foreach (var number in ThreeSmmallestNumbers)
+            {
+                Console.Write(number + ", ");
+            }
+        }
+        
+    }
 }

@@ -6,6 +6,7 @@ using System.Security;
 using System.IO.Pipes;
 using System.Collections;
 using Arraylist = dotnetpractice.Arraylist;
+using System.Numerics;
 
 namespace dotnetPractice
 {
@@ -152,6 +153,9 @@ namespace dotnetPractice
 
             Arraylist JuegaSale = new Arraylist();
             JuegaSale.quitOrContinue();*/
+
+            Arraylist matriz = new Arraylist();
+            matriz.ThreeSmmallestNumbers();
         }
     }
 }
