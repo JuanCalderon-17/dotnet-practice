@@ -152,10 +152,11 @@ namespace dotnetPractice
 
 
             Arraylist JuegaSale = new Arraylist();
-            JuegaSale.quitOrContinue();*/
+            JuegaSale.quitOrContinue();
 
             Arraylist matriz = new Arraylist();
-            matriz.ThreeSmmallestNumbers();
+            matriz.ThreeSmallestNumbers();*/
         }
+
     }
 }

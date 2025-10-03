@@ -189,6 +189,11 @@ class Arraylist
                 Console.WriteLine("Invalid input, please try again.");
                 continue;
             }
+            else if (input.Split(",").Length < 5)
+            {
+                Console.WriteLine("Please enter more than 5 numbers.");
+                continue;
+            }
 
             var parts = input.Split(',');
             foreach (var part in parts)
@@ -200,7 +205,7 @@ class Arraylist
             }
             numberList.Sort();
             var ThreeSmmallestNumbers = numberList.Take(3).ToList();
-            Console.Write("the Three Smallest Numbers are: ");
+            Console.Write("Three Smallest Numbers are: ");
             foreach (var number in ThreeSmmallestNumbers)
             {
                 Console.Write(number + ", ");
