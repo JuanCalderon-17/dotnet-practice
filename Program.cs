@@ -156,7 +156,13 @@ namespace dotnetPractice
 
             Arraylist matriz = new Arraylist();
             matriz.ThreeSmallestNumbers();*/
-        }
 
+
+            //dateTime exercises and examples 
+
+            fechaDia fecha = new fechaDia();
+            fecha.MostrarFecha(args);
+        }
+        
     }
 }
