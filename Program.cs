@@ -155,13 +155,29 @@ namespace dotnetPractice
             JuegaSale.quitOrContinue();
 
             Arraylist matriz = new Arraylist();
-            matriz.ThreeSmallestNumbers();*/
+            matriz.ThreeSmallestNumbers();
 
 
             //dateTime exercises and examples 
 
             fechaDia fecha = new fechaDia();
-            fecha.MostrarFecha(args);
+            fecha.MostrarFecha(args);*/
+
+            var timespan1 = new TimeSpan(1, 2, 3);
+
+            var start = DateTime.Now;
+            var end = DateTime.Now.AddMinutes(2);
+            Console.WriteLine(start);
+            Console.WriteLine(end);
+            Console.WriteLine($"Duration: {end - start}");
+
+            //Properties
+            Console.WriteLine("Minutes: " + timespan1.Minutes);
+            Console.WriteLine("Total Minutes: " + timespan1.TotalMinutes);
+
+            //Add
+            Console.WriteLine("Add Example: " + timespan1.Add(TimeSpan.FromMinutes(8)));
+            Console.WriteLine("Subtraction example: " + timespan1.Subtract(TimeSpan.FromHours(1)));
         }
         
     }
