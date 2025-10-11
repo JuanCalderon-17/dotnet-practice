@@ -1,15 +1,15 @@
 using System;
 using System.Runtime.CompilerServices;
+using System.Linq;
 
 namespace dotnetPractice
 {
     class stringPractice
     {
-
-        static void maxLengthMaker()
+        public string  _sentence = String.Empty;
+        public void maxLengthMaker(string sentence)
         {
-            
-            string sentence = "this is going to be a really really really really long string";
+            _sentence = sentence;
             const int maxLength = 20;
 
             if (sentence.Length < maxLength)
@@ -17,7 +17,17 @@ namespace dotnetPractice
             else
             {
                 var words = sentence.Split(" ");
-                var totalCaracthers = words.Count();
+                string allWords = "";
+
+                foreach (var word in words)
+                {
+                    allWords += word + " ";
+
+                }
+
+                Console.WriteLine("The words are = " + allWords);
+                Console.WriteLine($"The words count is = {words.Length}");
+
             }
             
         }
