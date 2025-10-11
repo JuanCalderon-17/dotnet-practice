@@ -161,7 +161,7 @@ namespace dotnetPractice
             //dateTime exercises and examples 
 
             fechaDia fecha = new fechaDia();
-            fecha.MostrarFecha(args);*/
+            fecha.MostrarFecha(args);
 
             var timespan1 = new TimeSpan(1, 2, 3);
 
@@ -178,6 +178,34 @@ namespace dotnetPractice
             //Add
             Console.WriteLine("Add Example: " + timespan1.Add(TimeSpan.FromMinutes(8)));
             Console.WriteLine("Subtraction example: " + timespan1.Subtract(TimeSpan.FromHours(1)));
+
+            var nombreComp = "Juan Calderon ";
+
+            Console.WriteLine($"Trim: '{nombreComp.Trim()}'");
+            Console.WriteLine($"ToUpper: '{nombreComp.ToUpper()}'");
+            Console.WriteLine($"ToLower: {nombreComp.ToLower()}");
+
+            var index = nombreComp.IndexOf(" ");
+            var firstName = nombreComp.Substring(0, index);
+            var lastName = nombreComp.Substring(index + 1);
+            Console.WriteLine($"First name:" + firstName);
+            Console.WriteLine($"Last name: " + lastName);
+
+            var names = nombreComp.Split(' ');
+            Console.WriteLine($"First Name: " + names[0]);
+            Console.WriteLine($"Last Name: " + names[1]);
+
+            Console.WriteLine($"Replace :" + nombreComp.Replace("Juan", "Juanito"));
+
+            var str = "25";
+            var age = Convert.ToByte(str);
+            Console.WriteLine(age);
+
+            float price = 29.95f;
+            Console.WriteLine(price.ToString("C0")); //currency*/
+            
+
+
         }
         
     }
