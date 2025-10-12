@@ -37,11 +37,13 @@ namespace dotnetPractice
         {
             var builder = new StringBuilder();
 
-            builder.Append('-', 10);
-            builder.AppendLine();
-            builder.Append("Header");
-            builder.AppendLine();
-            builder.Append('-', 10);
+            // both do the same, but im showing how to make the code look shorter and prettier
+            builder
+                .Append('-', 10)
+                .AppendLine()
+                .Append("Header")
+                .AppendLine()
+                .Append('-', 10);
 
             builder.Replace('-', '+');
             builder.Remove(0, 10);
