@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Runtime.CompilerServices;
 using System.Linq;
 
@@ -29,8 +30,29 @@ namespace dotnetPractice
                 Console.WriteLine($"The words count is = {words.Length}");
 
             }
-            
+
         }
+
+        public void builderPractice()
+        {
+            var builder = new StringBuilder();
+
+            builder.Append('-', 10);
+            builder.AppendLine();
+            builder.Append("Header");
+            builder.AppendLine();
+            builder.Append('-', 10);
+
+            builder.Replace('-', '+');
+            builder.Remove(0, 10);
+            Console.WriteLine(builder);
+
+
+            Console.WriteLine("First car: " + builder[0]);
+        }
+
+        
+
         
     }
 

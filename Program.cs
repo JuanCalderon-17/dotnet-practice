@@ -202,13 +202,14 @@ namespace dotnetPractice
             Console.WriteLine(age);
 
             float price = 29.95f;
-            Console.WriteLine(price.ToString("C0")); //currency*/
-
-
+            Console.WriteLine(price.ToString("C0")); //currency
 
             stringPractice practicando = new stringPractice();
+            practicando.maxLengthMaker("this is a very");*/
 
-            practicando.maxLengthMaker("this is a very long really and really really long paragraph");
+
+            stringPractice practiquemos = new stringPractice();
+            practiquemos.builderPractice();
 
 
         }
