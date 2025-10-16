@@ -2,6 +2,7 @@ using System;
 using System.Text;
 using System.Runtime.CompilerServices;
 using System.Linq;
+using System.Globalization;
 
 namespace dotnetPractice
 {
@@ -59,9 +60,34 @@ namespace dotnetPractice
         //  For example, if the input is "5-6-7-8-9" or "20-19-18-17-16", display a message: "Consecutive"; otherwise, display "Not Consecutive".
 
 
-        
+        public void consecutive()
+        {
+            Console.WriteLine("Enter a few numbers separated by a hyphen: ");
+            string? input = Console.ReadLine();
+            var numberList = new List<int>();
+            var numbers = input?.Split("-");
 
-        
+
+            foreach (var number in numbers)
+            {
+                if (int.TryParse(number, out int num))
+                {
+                    numberList.Add(num);
+                }
+                else
+                {
+                    Console.WriteLine("Not a valid number");
+                }
+            }
+
+            var numeros = "";
+            foreach (var numerosMuestra in numberList)
+            {
+                numeros += numerosMuestra + " ";
+            }
+            Console.WriteLine($"These are the numbers:{numeros} ");
+
+
+        }
     }
-
 }

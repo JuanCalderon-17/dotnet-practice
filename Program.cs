@@ -209,7 +209,7 @@ namespace dotnetPractice
 
 
             stringPractice practiquemos = new stringPractice();
-            practiquemos.builderPractice();
+            practiquemos.consecutive();
 
 
         }
