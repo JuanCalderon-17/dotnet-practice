@@ -65,7 +65,7 @@ namespace dotnetPractice
             Console.WriteLine("Enter a few numbers separated by a hyphen: ");
             string? input = Console.ReadLine();
             var numberList = new List<int>();
-            var numbers = input?.Split("-");
+            string[]? numbers = input?.Split("-");
 
 
             foreach (var number in numbers)
@@ -80,13 +80,21 @@ namespace dotnetPractice
                 }
             }
 
-            var numeros = "";
-            foreach (var numerosMuestra in numberList)
+            var IsConsecutive = true;
+            for (int i = 1; i < numberList.Count - 1; i++)
             {
-                numeros += numerosMuestra + " ";
+                if (numberList[i] >= numberList[i + 1])
+                {
+                    Console.WriteLine("Not Consecutiv");
+                    IsConsecutive = false;
+                    break;
+                }
             }
-            Console.WriteLine($"These are the numbers:{numeros} ");
 
+            if (IsConsecutive)
+            {
+                Console.WriteLine("Consecutive");
+            }
 
         }
     }
