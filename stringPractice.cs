@@ -8,7 +8,7 @@ namespace dotnetPractice
 {
     class stringPractice
     {
-        public string  _sentence = String.Empty;
+        public string _sentence = String.Empty;
         public void maxLengthMaker(string sentence)
         {
             _sentence = sentence;
@@ -96,6 +96,59 @@ namespace dotnetPractice
                 Console.WriteLine("Consecutive");
             }
 
+        }
+
+
+        //Write a program and ask the user to enter a few numbers separated by a hyphen. If the user simply presses Enter, without supplying an input,
+        //exit immediately; otherwise, check to see if there are duplicates. If so, display "Duplicate" on the console.
+
+        public void duplicates()
+        {
+            Console.WriteLine("Enter a few numbers separated by a hyphen: ");
+            string? input = Console.ReadLine();
+            var numberList = new List<int>();
+
+            if (!string.IsNullOrWhiteSpace(input))
+            {
+                var parts = input.Split("-");
+                var builder = new StringBuilder();
+
+                foreach (var part in parts)
+                {
+                    if (int.TryParse(part.Trim(), out int number))
+                    {
+                        numberList.Add(number);
+                    }
+                }
+
+                bool hasDuplicate = false;
+                HashSet<int> uniqueIdentifier = new HashSet<int>();
+                foreach (int num in numberList)
+                {
+                    if (uniqueIdentifier.Contains(num))
+                    {
+                        hasDuplicate = true;
+                    }
+                    else
+                    {
+                        uniqueIdentifier.Add(num);
+                    }
+                }
+
+                if (hasDuplicate)
+                {
+                    Console.WriteLine("Duplicates");
+                }
+                else
+                {
+                    Console.WriteLine("No Duplicates");
+                }
+            
+            }
+            else
+            {
+                Console.WriteLine("You should write something!");
+            }
         }
     }
 }
