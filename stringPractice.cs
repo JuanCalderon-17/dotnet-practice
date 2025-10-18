@@ -111,8 +111,6 @@ namespace dotnetPractice
             if (!string.IsNullOrWhiteSpace(input))
             {
                 var parts = input.Split("-");
-                var builder = new StringBuilder();
-
                 foreach (var part in parts)
                 {
                     if (int.TryParse(part.Trim(), out int number))
