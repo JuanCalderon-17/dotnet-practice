@@ -205,11 +205,14 @@ namespace dotnetPractice
             Console.WriteLine(price.ToString("C0")); //currency
 
             stringPractice practicando = new stringPractice();
-            practicando.maxLengthMaker("this is a very");*/
+            practicando.maxLengthMaker("this is a very");
 
 
             stringPractice practiquemos = new stringPractice();
-            practiquemos.duplicates();
+            practiquemos.duplicates();*/
+
+            stringPractice practiquemos = new stringPractice();
+            practiquemos.vocalCount();
 
 
         }

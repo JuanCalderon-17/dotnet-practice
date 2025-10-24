@@ -3,6 +3,7 @@ using System.Text;
 using System.Runtime.CompilerServices;
 using System.Linq;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace dotnetPractice
 {
@@ -141,12 +142,33 @@ namespace dotnetPractice
                 {
                     Console.WriteLine("No Duplicates");
                 }
-            
+
             }
             else
             {
                 Console.WriteLine("You should write something!");
             }
         }
+        
+
+        //Write a program and ask the user to enter an English word. Count the number of vowels (a, e, o, u, i) in the word.
+        //  So, if the user enters "inadequate", the program should display 6 on the console.
+
+        public void vocalCount()
+        {
+            Console.WriteLine("Enter an English word: ");
+            string? input = Console.ReadLine();
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                var hasVowels = Regex.Matches(input, "[aeiou]");
+
+                int numberOfTimes = hasVowels.Count();
+                Console.WriteLine($"The amount of vowels in the code is: {numberOfTimes}");
+
+                
+            }
+        }
+
     }
 }
