@@ -166,7 +166,6 @@ namespace dotnetPractice
                 int numberOfTimes = hasVowels.Count();
                 Console.WriteLine($"The amount of vowels in the code is: {numberOfTimes}");
 
-                
             }
         }
     }
