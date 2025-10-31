@@ -7,6 +7,7 @@ using System.IO.Pipes;
 using System.Collections;
 using Arraylist = dotnetpractice.Arraylist;
 using System.Numerics;
+using dotnetpractice;
 
 namespace dotnetPractice
 {
@@ -209,12 +210,15 @@ namespace dotnetPractice
 
 
             stringPractice practiquemos = new stringPractice();
-            practiquemos.duplicates();*/
+            practiquemos.duplicates();
 
             stringPractice practiquemos = new stringPractice();
-            practiquemos.vocalCount();
+            practiquemos.vocalCount();*/
 
+            // string manipulation
+            fileManipulation.numberWords("C:\\Users\\juanc\\OneDrive\\practiceProgramming\\dotnetPractice\\basicCsharp\\stringPractice.cs");
 
+            
         }
         
     }
