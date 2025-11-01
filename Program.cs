@@ -213,12 +213,12 @@ namespace dotnetPractice
             practiquemos.duplicates();
 
             stringPractice practiquemos = new stringPractice();
-            practiquemos.vocalCount();*/
+            practiquemos.vocalCount();
 
             // string manipulation
-            fileManipulation.numberWords("C:\\Users\\juanc\\OneDrive\\practiceProgramming\\dotnetPractice\\basicCsharp\\stringPractice.cs");
+            fileManipulation.numberWords("C:\\Users\\juanc\\OneDrive\\practiceProgramming\\dotnetPractice\\basicCsharp\\stringPractice.cs");*/
 
-            
+            fileManipulation.longestWord("C:\\Users\\juanc\\OneDrive\\practiceProgramming\\dotnetPractice\\basicCsharp\\stringPractice.cs");
         }
         
     }
